@@ -46,6 +46,7 @@ module LanguagePack
       end
       Kernel.puts " !"
       log "exit", :error => message if respond_to?(:log)
+      $stdout.flush
       exit 1
     end
 
